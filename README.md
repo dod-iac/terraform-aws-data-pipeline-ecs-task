@@ -63,9 +63,9 @@ This project constitutes a work of the United States Government and is not subje
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_execution_role"></a> [execution\_role](#module\_execution\_role) | dod-iac/ecs-task-execution-role/aws | 1.0.0 |
-| <a name="module_task_role"></a> [task\_role](#module\_task\_role) | dod-iac/ecs-task-role/aws | 1.0.0 |
-| <a name="module_task_role_policy"></a> [task\_role\_policy](#module\_task\_role\_policy) | dod-iac/data-pipeline-iam-policy/aws | 1.0.0 |
+| <a name="module_execution_role"></a> [execution\_role](#module\_execution\_role) | github.com/dod-iac/terraform-aws-ecs-task-execution-role | update_4_0 |
+| <a name="module_task_role"></a> [task\_role](#module\_task\_role) | github.com/dod-iac/terraform-aws-ecs-task-role | update_4_0 |
+| <a name="module_task_role_policy"></a> [task\_role\_policy](#module\_task\_role\_policy) | github.com/dod-iac/terraform-aws-data-pipeline-iam-policy | update_4_0 |
 
 ## Resources
 
