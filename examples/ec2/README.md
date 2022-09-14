@@ -25,10 +25,10 @@ No requirements.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cloudwatch_kms_key"></a> [cloudwatch\_kms\_key](#module\_cloudwatch\_kms\_key) | dod-iac/cloudwatch-kms-key/aws | 1.0.0 |
+| <a name="module_cloudwatch_kms_key"></a> [cloudwatch\_kms\_key](#module\_cloudwatch\_kms\_key) | dod-iac/cloudwatch-kms-key/aws | 1.0.1 |
 | <a name="module_data_pipeline_ecs_task"></a> [data\_pipeline\_ecs\_task](#module\_data\_pipeline\_ecs\_task) | ../../ | n/a |
-| <a name="module_s3_bucket_destination"></a> [s3\_bucket\_destination](#module\_s3\_bucket\_destination) | dod-iac/s3-bucket/aws | 1.0.1 |
-| <a name="module_s3_bucket_source"></a> [s3\_bucket\_source](#module\_s3\_bucket\_source) | dod-iac/s3-bucket/aws | 1.0.1 |
+| <a name="module_s3_bucket_destination"></a> [s3\_bucket\_destination](#module\_s3\_bucket\_destination) | dod-iac/s3-bucket/aws | 1.2.0 |
+| <a name="module_s3_bucket_source"></a> [s3\_bucket\_source](#module\_s3\_bucket\_source) | dod-iac/s3-bucket/aws | 1.2.0 |
 
 ## Resources
 
