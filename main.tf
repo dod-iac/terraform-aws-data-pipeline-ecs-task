@@ -53,9 +53,8 @@ data "aws_partition" "current" {}
 data "aws_region" "current" {}
 
 module "execution_role" {
-  #source  = "dod-iac/ecs-task-execution-role/aws"
-  #version = "1.0.1"
-  source = "github.com/dod-iac/terraform-aws-ecs-task-execution-role?ref=update_4_0"
+  source  = "dod-iac/ecs-task-execution-role/aws"
+  version = "1.0.1"
 
   allow_create_log_groups    = true
   allow_ecr                  = true
@@ -67,18 +66,16 @@ module "execution_role" {
 }
 
 module "task_role" {
-  #source  = "dod-iac/ecs-task-role/aws"
-  #version = "1.0.1"
-  source = "github.com/dod-iac/terraform-aws-ecs-task-role?ref=update_4_0"
+  source  = "dod-iac/ecs-task-role/aws"
+  version = "1.0.1"
 
   name = var.task_role_name
   tags = var.tags
 }
 
 module "task_role_policy" {
-  #source  = "dod-iac/data-pipeline-iam-policy/aws"
-  #version = "1.0.1"
-  source = "github.com/dod-iac/terraform-aws-data-pipeline-iam-policy?ref=update_4_0"
+  source  = "dod-iac/data-pipeline-iam-policy/aws"
+  version = "1.0.4"
 
   glue_tables_add  = var.glue_tables_add
   kms_keys_decrypt = var.kms_keys_decrypt
