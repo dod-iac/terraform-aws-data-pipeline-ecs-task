@@ -14,7 +14,7 @@
 
 module "s3_bucket_source" {
   source  = "dod-iac/s3-bucket/aws"
-  version = "1.0.1"
+  version = "1.2.0"
 
   name = format("test-src-%s", var.test_name)
   tags = var.tags
@@ -22,7 +22,7 @@ module "s3_bucket_source" {
 
 module "s3_bucket_destination" {
   source  = "dod-iac/s3-bucket/aws"
-  version = "1.0.1"
+  version = "1.2.0"
 
   name = format("test-dst-%s", var.test_name)
   tags = var.tags
@@ -30,7 +30,7 @@ module "s3_bucket_destination" {
 
 module "cloudwatch_kms_key" {
   source  = "dod-iac/cloudwatch-kms-key/aws"
-  version = "1.0.0"
+  version = "1.0.1"
 
   name = format("alias/test-cloudwatch-logs-%s", var.test_name)
 

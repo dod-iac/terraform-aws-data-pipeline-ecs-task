@@ -51,21 +51,21 @@ This project constitutes a work of the United States Government and is not subje
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.0, < 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.0, < 5.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_execution_role"></a> [execution\_role](#module\_execution\_role) | dod-iac/ecs-task-execution-role/aws | 1.0.0 |
-| <a name="module_task_role"></a> [task\_role](#module\_task\_role) | dod-iac/ecs-task-role/aws | 1.0.0 |
-| <a name="module_task_role_policy"></a> [task\_role\_policy](#module\_task\_role\_policy) | dod-iac/data-pipeline-iam-policy/aws | 1.0.0 |
+| <a name="module_execution_role"></a> [execution\_role](#module\_execution\_role) | dod-iac/ecs-task-execution-role/aws | 1.0.1 |
+| <a name="module_task_role"></a> [task\_role](#module\_task\_role) | dod-iac/ecs-task-role/aws | 1.0.1 |
+| <a name="module_task_role_policy"></a> [task\_role\_policy](#module\_task\_role\_policy) | dod-iac/data-pipeline-iam-policy/aws | 1.0.4 |
 
 ## Resources
 
