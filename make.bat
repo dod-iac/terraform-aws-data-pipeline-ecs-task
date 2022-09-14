@@ -39,6 +39,13 @@ if %1%==clean (
   exit /B 0
 )
 
+if %1%==fmt (
+
+  go fmt ./test ./pkg/tools
+
+  exit /B 0
+)
+
 if %1%==format_terraform (
 
   where terraform >nul 2>&1 || (
@@ -55,6 +62,24 @@ if %1%==format_terraform (
       popd
     )
   )
+
+  exit /B 0
+)
+
+if %1%==imports (
+
+  if not exist "%~dp0bin\goimports.exe" (
+    go build -o bin/goimports.exe golang.org/x/tools/cmd/goimports
+  )
+
+  .\bin\goimports.exe -w -local github.com/gruntwork-io/terratest,github.com/aws/aws-sdk-go,github.com/dod-iac ./test ./pkg/tools
+
+  exit /B 0
+)
+
+if %1%==tidy (
+
+  go mod tidy
 
   exit /B 0
 )
