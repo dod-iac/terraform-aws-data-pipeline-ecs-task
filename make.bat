@@ -77,6 +77,17 @@ if %1%==imports (
   exit /B 0
 )
 
+if %1%==staticcheck (
+
+  if not exist "%~dp0bin\staticcheck.exe" (
+    go build -o bin/staticcheck.exe honnef.co/go/tools/cmd/staticcheck
+  )
+
+  .\bin\staticcheck.exe -checks all ./test
+
+  exit /B 0
+)
+
 if %1%==tidy (
 
   go mod tidy
